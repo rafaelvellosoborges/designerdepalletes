@@ -2,148 +2,113 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #0f1a24;
     color: #fff;
     line-height: 1.6;
+    width: 100vw;
+    background-color: black;
+
 }
 
-/* HERO */
 .hero {
     position: relative;
     height: 90vh;
-    background: url('../img/hero.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 31vh;
 }
 
-.overlay {
+.planofundo1 {
     position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.65);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
 
-.hero-content {
+.videooferta1 {
+    position: absolute;
+    top: 35vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    max-height: 80vh;
+    width: 62vw;
+    height: auto;
+}
+
+.ofertabeneficios {
     position: relative;
     text-align: center;
-    max-width: 900px;
-    padding: 20px;
+    margin-top: -5px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-/* BOTÕES */
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn-primary {
-    background: #1fbf75;
-    color: #fff;
-}
-
-.btn-success {
-    background: #00c853;
-    color: #000;
-}
-
-/* IMAGEM */
-.image-section img {
+.planofundo2 {
     width: 100%;
-    display: block;
 }
 
-/* SOBRE */
-.about {
-    background: #142233;
-    padding: 60px 20px;
+.buttonbeneficios {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 49vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(131, 109, 85);
+    color: rgb(255, 49, 49);
+    padding: 15px 30px;
+    font-size: 3.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.about-container {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    gap: 30px;
-    align-items: center;
+.buttonbeneficios:hover {
+    font-size: 4rem;
+    transition: 0.6s ease-in-out;
 }
 
-.about img {
-    width: 220px;
-    border-radius: 8px;
+.planofundo3 {
+    width: 100%;
 }
 
-/* BENEFÍCIOS */
-.benefits {
-    padding: 60px 20px;
-    text-align: center;
+.planofundo4 {
+    width: 100%;
 }
 
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 40px auto;
+.planofundo5 {
+    width: 100%;
 }
 
-.card {
-    background: #1b2f45;
-    padding: 25px;
-    border-radius: 8px;
+.buttonoportunidade {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 250vw;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(38, 194, 59);
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    font-size: 3.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-/* GARANTIA */
-.guarantee {
-    background: #f7941d;
-    color: #000;
-    padding: 50px 20px;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
+buttonoportunidade:hover {
+    font-size: 4rem;
+    transition: 0.6s ease-in-out;
 }
 
-.guarantee img {
-    width: 120px;
-}
 
-/* OFERTA */
-.offer {
-    background: #0b1622;
-    padding: 60px 20px;
-    text-align: center;
-}
 
-.offer ul {
-    list-style: none;
-    margin: 25px 0;
+.planofundo6 {
+    width: 100%;
 }
-
-.offer li {
-    margin-bottom: 10px;
-}
-
-.price {
-    font-size: 1.8rem;
-    margin: 20px 0;
-}
-
 /* WHATSAPP */
 .whatsapp {
     background: #121212;
