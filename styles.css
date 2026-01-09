@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,25 +7,22 @@
 }
 
 body {
+    display: block;
     color: #fff;
     line-height: 1.6;
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
     background-color: black;
 
 }
 
 .hero {
     position: relative;
-    height: 90vh;
-    margin-bottom: 31vh;
 }
 
 .planofundo1 {
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: -1;
+    width: calc(100vw - (100vw - 100%));
 }
 
 .videooferta1 {
@@ -32,33 +30,30 @@ body {
     top: 35vw;
     left: 50vw;
     transform: translate(-50%, -50%);
-    max-width: 90vw;
-    max-height: 80vh;
     width: 62vw;
-    height: auto;
 }
 
 .ofertabeneficios {
     position: relative;
     text-align: center;
-    margin-top: -5px;
 }
 
 .planofundo2 {
-    width: 100%;
+    width: calc(100vw - (100vw - 100%));
 }
 
 .buttonbeneficios {
+    display: flex;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: bold;
     position: absolute;
-    top: 49vw;
+    bottom: 0.20%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(131, 109, 85);
     color: rgb(255, 49, 49);
-    padding: 15px 30px;
-    font-size: 3.5rem;
+    padding: 1vw 2vw;
+    font-size: 5vw;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -66,60 +61,74 @@ body {
 }
 
 .buttonbeneficios:hover {
-    font-size: 4rem;
+    font-size: 5.5vw;
     transition: 0.6s ease-in-out;
 }
 
 .planofundo3 {
-    width: 100%;
+    width: calc(100vw - (100vw - 100%));
 }
 
 .planofundo4 {
-    width: 100%;
+    width: calc(100vw - (100vw - 100%));
+}
+
+.oportunidade {
+    width: calc(100vw - (100vw - 100%));
+    position: relative;
+    text-align: center;
 }
 
 .planofundo5 {
-    width: 100%;
+    width: calc(100vw - (100vw - 100%));
 }
 
 .buttonoportunidade {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: bold;
     position: absolute;
-    top: 250vw;
-    left: 50.5%;
+    top: 20vw;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(38, 194, 59);
     color: rgb(255, 255, 255);
-    padding: 15px 30px;
-    font-size: 3.5rem;
+    padding: 1vw 2vw;
+    font-size: 4.2vw;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     text-decoration: none;
 }
 
-buttonoportunidade:hover {
-    font-size: 4rem;
+.buttonoportunidade:hover {
+    font-size: 4.3vw;
     transition: 0.6s ease-in-out;
 }
 
 
 
 .planofundo6 {
-    width: 100%;
-}
-/* WHATSAPP */
-.whatsapp {
-    background: #121212;
-    padding: 40px 20px;
-    text-align: center;
+    width: calc(100vw - (100vw - 100%));
 }
 
-.whatsapp a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #25d366;
-    font-size: 1.2rem;
-    text-decoration: none;
+/* WHATSAPP */
+/* Garante que .logowhatsApp fique sobre .planofundo6 */
+.whatsapp div {
+    position: relative;
+}
+
+.logowhatsApp {
+    position: absolute;
+    top: 32vw;
+    left: 47vw;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+ }
+ .logowhatsApp img:hover {
+    width: 16vw; 
+    transition: 0.6s ease-in-out;
+}
+
+ .logowhatsApp img {
+    width: 14vw;
 }
